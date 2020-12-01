@@ -36,17 +36,10 @@ class Airline(models.Model):
     class Meta:
         db_table = 'airlines'
 
-class Product_reservation(models.Model):
-    reservation_id = models.ForeignKey('reservations.Reservation', on_delete = models.CASCADE)
-    product_id     = models.ForeignKey('Product', on_delete                  = models.CASCADE)
-
-    class Meta:
-        db_table = 'product_reservations'
-
 class Region(models.Model):
     name      = models.CharField(max_length = 20)
     initial   = models.CharField(max_length = 10)
     image_url = models.CharField(max_length = 100, null = True)
 
     class Meta:
-        db_table = 'Regions'
+        db_table = 'regions'
