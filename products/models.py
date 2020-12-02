@@ -1,11 +1,11 @@
 from django.db import models
 
 class Product(models.Model):
-    airplane       = models.ForeignKey('Airplane', on_delete=models.CASCADE)
-    price          = models.DecimalField(max_digits=15, decimal_places=2)
-    seat_type      = models.ForeignKey('SeatType', on_delete=models.CASCADE)
-    remaining_seat = models.IntegerField()
-    total_seats    = models.IntegerField()
+    airplane        = models.ForeignKey('Airplane', on_delete=models.CASCADE)
+    price           = models.DecimalField(max_digits=15, decimal_places=2)
+    seat_type       = models.ForeignKey('SeatType', on_delete=models.CASCADE)
+    remaining_seat  = models.IntegerField()
+    total_seats     = models.IntegerField()
 
     class Meta:
         db_table = 'products'
