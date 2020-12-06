@@ -88,3 +88,115 @@ Not Found: /accounts/login/
 [2020-12-05 18:34:54 +0000] [2713] [INFO] Handling signal: term
 [2020-12-05 18:34:54 +0000] [2825] [INFO] Worker exiting (pid: 2825)
 [2020-12-05 18:34:54 +0000] [2713] [INFO] Shutting down: Master
+[2020-12-06 03:18:34 +0000] [4957] [INFO] Starting gunicorn 20.0.4
+[2020-12-06 03:18:34 +0000] [4957] [ERROR] Retrying in 1 second.
+[2020-12-06 03:18:35 +0000] [4957] [ERROR] Retrying in 1 second.
+[2020-12-06 03:18:36 +0000] [4957] [ERROR] Retrying in 1 second.
+[2020-12-06 03:18:37 +0000] [4957] [ERROR] Retrying in 1 second.
+[2020-12-06 03:18:38 +0000] [4957] [ERROR] Retrying in 1 second.
+[2020-12-06 03:18:39 +0000] [4957] [ERROR] Can't connect to ('ind=0.0.0.0', 8000)
+[2020-12-06 03:19:18 +0000] [4962] [INFO] Starting gunicorn 20.0.4
+[2020-12-06 03:19:18 +0000] [4962] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:19 +0000] [4962] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:20 +0000] [4962] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:21 +0000] [4962] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:22 +0000] [4962] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:23 +0000] [4962] [ERROR] Can't connect to ('ind=0.0.0.0', 8000)
+[2020-12-06 03:19:27 +0000] [4964] [INFO] Starting gunicorn 20.0.4
+[2020-12-06 03:19:27 +0000] [4964] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:28 +0000] [4964] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:29 +0000] [4964] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:30 +0000] [4964] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:31 +0000] [4964] [ERROR] Retrying in 1 second.
+[2020-12-06 03:19:32 +0000] [4964] [ERROR] Can't connect to ('ind=0.0.0.0', 8000)
+[2020-12-06 03:23:49 +0000] [4978] [INFO] Starting gunicorn 20.0.4
+[2020-12-06 03:23:49 +0000] [4978] [INFO] Listening at: http://0.0.0.0:8000 (4978)
+[2020-12-06 03:23:49 +0000] [4978] [INFO] Using worker: sync
+[2020-12-06 03:23:49 +0000] [4980] [INFO] Booting worker with pid: 4980
+[2020-12-06 04:07:45 +0000] [5281] [INFO] Starting gunicorn 20.0.4
+[2020-12-06 04:07:45 +0000] [5281] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:07:45 +0000] [5281] [ERROR] Retrying in 1 second.
+[2020-12-06 04:07:46 +0000] [5281] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:07:46 +0000] [5281] [ERROR] Retrying in 1 second.
+[2020-12-06 04:07:47 +0000] [5281] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:07:47 +0000] [5281] [ERROR] Retrying in 1 second.
+[2020-12-06 04:07:48 +0000] [5281] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:07:48 +0000] [5281] [ERROR] Retrying in 1 second.
+[2020-12-06 04:07:49 +0000] [5281] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:07:49 +0000] [5281] [ERROR] Retrying in 1 second.
+[2020-12-06 04:07:50 +0000] [5281] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2020-12-06 04:08:31 +0000] [5289] [INFO] Starting gunicorn 20.0.4
+[2020-12-06 04:08:31 +0000] [5289] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:08:31 +0000] [5289] [ERROR] Retrying in 1 second.
+[2020-12-06 04:08:32 +0000] [5289] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:08:32 +0000] [5289] [ERROR] Retrying in 1 second.
+[2020-12-06 04:08:33 +0000] [5289] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:08:33 +0000] [5289] [ERROR] Retrying in 1 second.
+[2020-12-06 04:08:34 +0000] [5289] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:08:34 +0000] [5289] [ERROR] Retrying in 1 second.
+[2020-12-06 04:08:35 +0000] [5289] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2020-12-06 04:08:35 +0000] [5289] [ERROR] Retrying in 1 second.
+[2020-12-06 04:08:36 +0000] [5289] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2020-12-06 04:11:34 +0000] [5315] [INFO] Starting gunicorn 20.0.4
+[2020-12-06 04:11:34 +0000] [5315] [INFO] Listening at: http://0.0.0.0:8000 (5315)
+[2020-12-06 04:11:34 +0000] [5315] [INFO] Using worker: sync
+[2020-12-06 04:11:34 +0000] [5317] [INFO] Booting worker with pid: 5317
+Not Found: /static/drf-yasg/swagger-ui-dist/favicon-32x32.png
+Not Found: /static/drf-yasg/style.css
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui.css
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+Not Found: /static/drf-yasg/insQ.min.js
+Not Found: /static/drf-yasg/url-polyfill.min.js
+Not Found: /static/drf-yasg/immutable.min.js
+Not Found: /static/drf-yasg/swagger-ui-init.js
+Not Found: /static/drf-yasg/url-polyfill.min.js
+Not Found: /static/drf-yasg/swagger-ui-init.js
+Not Found: /static/drf-yasg/swagger-ui-dist/favicon-32x32.png
+Not Found: /static/drf-yasg/style.css
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui.css
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+Not Found: /static/drf-yasg/insQ.min.js
+Not Found: /static/drf-yasg/immutable.min.js
+Not Found: /static/drf-yasg/url-polyfill.min.js
+Not Found: /static/drf-yasg/swagger-ui-init.js
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+Not Found: /static/drf-yasg/insQ.min.js
+Not Found: /static/drf-yasg/immutable.min.js
+Not Found: /static/drf-yasg/url-polyfill.min.js
+Not Found: /static/drf-yasg/swagger-ui-init.js
+Not Found: /static/drf-yasg/swagger-ui-dist/favicon-32x32.png
+Not Found: /accounts/login/
+Not Found: /favicon.ico
+Not Found: /static/drf-yasg/style.css
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui.css
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+Not Found: /static/drf-yasg/immutable.min.js
+Not Found: /static/drf-yasg/insQ.min.js
+Not Found: /static/drf-yasg/url-polyfill.min.js
+Not Found: /static/drf-yasg/swagger-ui-init.js
+Not Found: /static/drf-yasg/immutable.min.js
+Not Found: /static/drf-yasg/url-polyfill.min.js
+Not Found: /static/drf-yasg/swagger-ui-init.js
+Not Found: /static/drf-yasg/swagger-ui-dist/favicon-32x32.png
+[2020-12-06 05:04:28 +0000] [5315] [CRITICAL] WORKER TIMEOUT (pid:5317)
+[2020-12-06 05:04:28 +0000] [5317] [INFO] Worker exiting (pid: 5317)
+[2020-12-06 05:04:28 +0000] [5401] [INFO] Booting worker with pid: 5401
+Not Found: /accounts/login/
+Not Found: /favicon.ico
+[2020-12-06 05:05:48 +0000] [5315] [CRITICAL] WORKER TIMEOUT (pid:5401)
+[2020-12-06 05:05:48 +0000] [5401] [INFO] Worker exiting (pid: 5401)
+[2020-12-06 05:05:48 +0000] [5403] [INFO] Booting worker with pid: 5403
+Not Found: /static/drf-yasg/style.css
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui.css
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js
+Not Found: /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js
+Not Found: /static/drf-yasg/insQ.min.js
+Not Found: /static/drf-yasg/immutable.min.js
+Not Found: /static/drf-yasg/url-polyfill.min.js
+Not Found: /static/drf-yasg/swagger-ui-init.js
+[2020-12-06 05:05:57 +0000] [5315] [INFO] Handling signal: term
+[2020-12-06 05:05:57 +0000] [5403] [INFO] Worker exiting (pid: 5403)
+[2020-12-06 05:05:57 +0000] [5315] [INFO] Shutting down: Master

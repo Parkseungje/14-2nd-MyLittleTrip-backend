@@ -22,8 +22,8 @@ class ProductListView(APIView):
         from_region = request.GET.get('departure_region', None)
         to_region   = request.GET.get('arrival_region', None)
         from_date   = request.GET.get('departure_date', None)
-        offset      = request.GET.get('offset', 0)
-        limit       = request.GET.get('limit', 20)
+        offset      = int(request.GET.get('offset', 0))
+        limit       = int(request.GET.get('limit', 20))
 
         q = Q()
 
@@ -35,7 +35,7 @@ class ProductListView(APIView):
 
         if from_date:
             date = [int(i) for i in from_date.split('-')]
-            q.add(Q(airplane__from_date=datetime.date(date[0],date[1],date[2])), Q.AND)
+            q.add(Q(airplane__from_date__contains=datetime.date(date[0],date[1],date[2])), Q.AND)
 
         products = Product.objects.select_related('airplane__from_region').filter(q)[offset:offset+limit]
         serializer = ProductSerializer(products, many=True)

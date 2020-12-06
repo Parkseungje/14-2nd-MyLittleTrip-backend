@@ -44,4 +44,6 @@ class ReservationSerializer(serializers.ModelSerializer):
 class ProductListQuerySerializer(serializers.Serializer):
     departure_region = serializers.CharField(help_text="출발 지역", required=False)
     arrival_region   = serializers.CharField(help_text="도착 지역", required=False)
-    departure_date   = serializers.CharField(help_text="출발 날짜(YYYY-MM-DD)", required=False)
+    departure_date   = serializers.DateField(help_text="출발 날짜(YYYY-MM-DD)", required=False)
+    offset           = serializers.CharField(help_text="시작위치", required=False)
+    limit            = serializers.CharField(help_text="리스트 갯수", required=False)
