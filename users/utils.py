@@ -1,8 +1,8 @@
 import jwt, json
-from django.http           import JsonResponse
+from django.http import JsonResponse
 
-from .models               import User
-from mylittletrip.my_settings import SECRET_KEY,JWT_ALGORITHM
+from .models     import User
+from my_settings import SECRET_KEY,JWT_ALGORITHM
 
 def Login_decorator(func):
     def wrapper(self, request, *args, **kwargs):

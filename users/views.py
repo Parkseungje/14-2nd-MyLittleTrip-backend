@@ -4,12 +4,12 @@ import bcrypt
 import jwt
 import requests
 
-from django.http              import JsonResponse
-from django.views             import View
+from django.http  import JsonResponse
+from django.views import View
 
-from .models                  import User
-from mylittletrip.my_settings import SECRET_KEY, JWT_ALGORITHM
-from users.utils              import Login_decorator
+from .models      import User
+from my_settings  import SECRET_KEY, JWT_ALGORITHM
+from users.utils  import Login_decorator
 
 class SignUpView(View):
     def post(self, request):
@@ -17,7 +17,6 @@ class SignUpView(View):
         try:
             if len(data['password']) < 8:
                 return JsonResponse({'message' : 'INVALID_ERROR'}, status = 400)
-            
             
             invalid_email = re.compile('^[a-zA-Z0-9+-_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
             
@@ -58,6 +57,18 @@ class SignInView(View):
 
         except User.DoesNotExist:
             return JsonResponse({'message' : 'INVALID_ERROR'}, status=400)
+    @Login_decorator
+    def get(self, request):
+        request.user
+        user_info={
+            'name' : request.user.name,
+            'email' : request.user.email,
+            'phone_number' : request.user.phone_number,
+            'card_number' : request.user.card_number
+        }
+        return JsonResponse({'user_info':user_info}, status = 200)
+
+    
 
 class SocialSignUpView(View):
     def post(self, request):
