@@ -4,12 +4,12 @@ import bcrypt
 import jwt
 import requests
 
-from django.http              import JsonResponse
-from django.views             import View
+from django.http  import JsonResponse
+from django.views import View
 
-from .models                  import User
-from mylittletrip.my_settings import SECRET_KEY, JWT_ALGORITHM
-from users.utils              import Login_decorator
+from .models      import User
+from my_settings  import SECRET_KEY, JWT_ALGORITHM
+from users.utils  import Login_decorator
 
 class SignUpView(View):
     def post(self, request):
