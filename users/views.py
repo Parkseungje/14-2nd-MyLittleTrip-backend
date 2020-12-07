@@ -6,20 +6,23 @@ import requests
 
 from django.http  import JsonResponse
 from django.views import View
+from rest_framework.views import APIView
+from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema
 
 from .models      import User
 from my_settings  import SECRET_KEY, JWT_ALGORITHM
 from users.utils  import Login_decorator
 
-class SignUpView(View):
+class SignUpView(APIView):
     def post(self, request):
         data  = json.loads(request.body)
         try:
             if len(data['password']) < 8:
                 return JsonResponse({'message' : 'INVALID_ERROR'}, status = 400)
-            
+
             invalid_email = re.compile('^[a-zA-Z0-9+-_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
-            
+
             if not invalid_email.match(data['email']):
                 return JsonResponse({'message' : 'INVALID_ERROR'}, status = 400)
 
@@ -37,9 +40,8 @@ class SignUpView(View):
 
         except KeyError:
             return JsonResponse({'message' : 'KEY_ERROR'}, status=400)
-    
 
-class SignInView(View):
+class SignInView(APIView):
     def post(self, request):
         try:
             data = json.loads(request.body)
@@ -47,7 +49,7 @@ class SignInView(View):
 
             if bcrypt.checkpw(data['password'].encode('utf-8'), user.password.encode('utf-8')):
                 token = jwt.encode({'id' : user.id}, SECRET_KEY, algorithm=JWT_ALGORITHM).decode('utf-8')
-                
+
                 return JsonResponse({'token' : token}, status=200)
 
             return JsonResponse({'message' : 'INVALID_ERROR'}, status=400)
@@ -68,9 +70,7 @@ class SignInView(View):
         }
         return JsonResponse({'user_info':user_info}, status = 200)
 
-    
-
-class SocialSignUpView(View):
+class SocialSignUpView(APIView):
     def post(self, request):
         try :
             access_token = request.headers.get('Authorization', None)
@@ -83,8 +83,8 @@ class SocialSignUpView(View):
 
         except KeyError :
             return JsonResponse({'message' : 'KEY_ERROR'}, status=400)
-        
-class SocialSignInView(View):
+
+class SocialSignInView(APIView):
     def post(self, request):
         try:
             access_token = request.headers.get('Authorization', None)

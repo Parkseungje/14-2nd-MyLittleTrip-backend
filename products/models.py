@@ -41,3 +41,4 @@ class Region(models.Model):
 
     class Meta:
         db_table = 'regions'
+
