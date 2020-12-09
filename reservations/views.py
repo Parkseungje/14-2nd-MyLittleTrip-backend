@@ -7,13 +7,13 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from .models import Reservation
-from .serializers import ReservationSerializer
+from .serializers import ReservationSerializer, ReservationCreateSerializer
 
 class ReservationListView(APIView):
     def post(self, request):
         data = json.loads(request.body)
 
-        serializer = ReservationSerializer(data=data)
+        serializer = ReservationCreateSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
