@@ -1,66 +1,30 @@
-# mylittletrip
----
+## ✈ My Little Trip
 
-## 마이리얼트립
--  [myrealtrip](https://www.myrealtrip.com/)  사이트
+![](https://i.ibb.co/ZhjDmwc/logo.png)
 
-## 팀원
-- Front-end: 김병준, 김현지, 이승윤
-- Back-end: 박승제, 백승찬, 장규석
+[마이리얼트립]: https://www.myrealtrip.com/
 
-## 개발 기간
-- 기간: 2020.11.30 ~ 2020.12.11 (11일)
+> 마이리틀트립은 자유 여행 플랫폼 [마이리얼트립]을 참고하여 React와 Django 학습 목적으로 진행된 프로젝트 입니다.
 
-## 적용 기술
-- Front-end: React.js(Class), React-router, React-slick, SASS
-- Back-end: Django, Python, MySQL, jwt, bcrypt
+##### 일정 : 2020년 11월 30일 ~ 2020년 12월 11일 (12일 간)
 
-## 구현 기능
+##### React / Styled Components / Redux / Sass 
 
-## 영상
-(완성 후 등록 예정)
+<br>
 
-## 개인 역할
+## 팀 구성
 
-`박승제`
--
-`백승찬`
--
-`장규석`
--
-## 소감 및 후기
-- 박승제:
-- 백승찬:
-- 장규석:
-## 레퍼런스
-- 이 프로젝트는 [myrealtrip](https://www.myrealtrip.com/) 사이트를 참조하여 학습목적으로 만들었습니다.
-- 실무수준의 프로젝트이지만 학습용으로 만들었기 때문에 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
-- 이 프로젝트에서 사용하고 있는 사진 대부분은 위코드에서 구매한 것이므로 해당 프로젝트 외부인이 사용할 수 없습니다.
+- FrontEnd : 김현지, 김병준, 이승윤
+- BackEnd : 장규석(PM), 박승제, 백승찬
 
-## 초기세팅 방법
+## Features
 
-### 가상환경 생성(miniconda3)
-```
-conda create -n 'mylittletrip' python=3.8
-conda activate mylittletrip
-```
-### requirment.txt로 자동 모듈 설치
-```
-pip install -r requirments.txt
-```
+- 메인 페이지 (김현지)
+- 로딩 스크린 (김현지)
+- 로그인 / 회원가입 페이지 + 소셜로그인 (김현지)
+- 항공권 목록 페이지 (이승윤)
+- 항공권 필터링 기능 (이승윤)
+- 항공권 예매 페이지 (김병준)
+- 예매 확인 페이지 (김현지)
 
-### my_settings.py 형식:
-```
-DATABASES = {
-    'default' : {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': '데이터베이스이름',
-        'USER': 'root',
-        'PASSWORD': '비밀번호',
-        'HOST': '아이피주소',
-        'PORT': '포트번호',
-    }
-}
 
-SECRET_KEY = '시크릿키 비밀번호'
-```
