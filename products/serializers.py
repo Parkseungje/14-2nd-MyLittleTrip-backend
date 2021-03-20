@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from .models import SeatType, Product, Airline,Airplane, Region
+from products.models import Airline, Airplane, Product, Region, SeatType
 
 class SeatTypeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = SeatType
-        fields = ('name',)
+        model  = SeatType
+        fields = ('name','image_url')
 
 class AirlineSerializer(serializers.ModelSerializer):
     class Meta:
